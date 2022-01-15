@@ -35,7 +35,7 @@ main > #img_div{
     background-image: linear-gradient(hsla(277, 64%, 61%, 0.274), hsla(277, 64%, 61%, 0.274)), url("image-header-desktop.jpg");
     background-position: center;
     background-size: cover;
-    height: 407px;
+    height: 416px;
     width: 500px;
     grid-area: 1/2/2/3;
 }
