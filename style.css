@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    color: hsl(0,0%,100%);
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    height: 60%;
+    width: 70%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+
+
+main > #img_div{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(hsla(277, 64%, 61%, 0.274), hsla(277, 64%, 61%, 0.274)), url("image-header-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 407px;
+    width: 500px;
+    grid-area: 1/2/2/3;
+}
+
+
+main > #main_div{
+    width: 500px;
+    margin: 30px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+
+main > #main_div > #sub_div1{
+    margin: 5px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10px;
+}
+
+main > #main_div > #sub_div1 > h3{
+    font-size: 35px;
+}
+
+main > #main_div > #sub_div1 > h3 > span{
+    color: hsl(277, 100%, 51%);
+    
+}
+
+main > #main_div > #sub_div1 > p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 20px;
+}
+
+
+main > #main_div > #sub_div2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+main > #main_div > #sub_div2 > div{
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+main > #main_div > #sub_div2 > div > h4{
+    font-size: 20px;
+    padding: 5px;
+}
+
+main > #main_div > #sub_div2 > div > p{
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 375px){
+    main{
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 10px;
+        height: 570px;
+        width: 350px;
+    
+        display: block;
+    }
+    
+    
+    
+    main > #img_div{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+        background-image: linear-gradient(hsla(277, 64%, 61%, 0.274), hsla(277, 64%, 61%, 0.274)), url("image-header-mobile.jpg");
+        height: 257px;
+        width: 350px;
+        margin: 0 0 10px 0;
+    }
+
+    main > #main_div{
+        text-align: center;
+        grid-area: 2/1/3/2;
+        width: 350px;
+        height: 300px;
+        margin: 2px auto;
+    
+        display: block;
+    }
+    
+    
+    main > #main_div > #sub_div1{
+        height: 90px;
+        box-sizing: border-box;
+        margin-bottom: 12px;
+    
+        display: block;
+    }
+    
+    main > #main_div > #sub_div1 > h3{
+        font-size: 23px;
+        padding-bottom: 10px;
+    }
+    
+    
+    main > #main_div > #sub_div1 > p{
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 15px;
+        line-height: 16px;
+
+    }
+    
+    
+    main > #main_div > #sub_div2{
+        display: block;
+        height: 200px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    
+    main > #main_div > #sub_div2 > div{
+        
+        width: 350px;
+        height: 50px;
+    }
+    
+}
